@@ -4,9 +4,15 @@
     </head>
     <body>
         <div>
-            <input type='text' name='todo_input'>
-            <button type='submit'>Add Todo</button>
-            <span id="errorMessage"></span>
+            <!-- <input type='text' name='todo_input'>
+            <button type='submit'>Add Todo</button> -->
+            
+            <div id="completed">
+                <button id="completed_btn" onclick=compTask();>Completed</button>
+            </div>
+            <div id="pending">
+                <button id="pending_btn" onclick=pendTask();>Pending</button>
+            </div>
             <div class='todos'></div>
         </div>
     </body>
